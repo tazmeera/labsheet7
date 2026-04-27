@@ -3,62 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Tazmeera's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar">
-        <div class="logo">DevPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Tazmeera</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-        <p>A passionate Full-Stack Developer</p>
-        <button onclick="scrollToSection('projects')">View My Work</button>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a computer science student specializing in web technologies. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <div class="text-content">
+                    <h1>Hello, I'm <span class="highlight">Tazmeera</span></h1>
+                    <p class="subtitle">Web Developer & Designer</p>
+                    <p class="description">Welcome to my personal portfolio. I create beautiful and functional websites.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="image-content">
+                    <img src="https://via.placeholder.com/300x300/3498db/ffffff?text=Tazmeera" alt="Tazmeera's Profile Picture" class="profile-img">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>E-commerce App</h3>
-                <p>A fully functional shopping site.</p>
-                <a href="#">Github Link</a>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Tazmeera, a passionate web developer with a love for creating interactive and user-friendly websites. I specialize in front-end development using HTML, CSS, and JavaScript.</p>
+                    <p>With a background in computer science, I enjoy turning ideas into reality through code. When I'm not coding, you can find me exploring new technologies or working on personal projects.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300x300/2c3e50/ffffff?text=About+Tazmeera" alt="About Tazmeera" class="about-img">
+                </div>
             </div>
-            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Node.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/3498db/ffffff?text=Portfolio+Website" alt="Project 1" class="project-img">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/e74c3c/ffffff?text=E-commerce+Site" alt="Project 2" class="project-img">
+                    <h3>E-commerce Site</h3>
+                    <p>An online shopping platform with user authentication and payment integration.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/27ae60/ffffff?text=Weather+App" alt="Project 3" class="project-img">
+                    <h3>Weather App</h3>
+                    <p>A weather application that displays current weather and forecasts using API data.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out if you have any questions or want to work together!</p>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> tazmeera@example.com</p>
+                        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                        <p><strong>Location:</strong> Your City, Country</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tazmeera. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
